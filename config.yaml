@@ -1,0 +1,43 @@
+input:
+  case_id_column: "case_id"
+  activity_column: "Activity"
+  start_time_column: "start_time"
+  end_time_column: "end_time"
+  resource_column: "Resource"
+  timezone: "UTC"
+  delimiter: ","
+  encoding: "utf-8-sig"
+
+transition_discovery:
+  method: "closest_non_concurrent"
+  concurrency_threshold: 0.1
+  max_predecessors: 1
+
+batching:
+  minimum_batch_size: 2
+  start_gap_seconds: 60.0
+  same_day: true
+
+calendar:
+  method: "schedule"
+  working_days: [0, 1, 2, 3, 4]
+  working_start: "09:00:00"
+  working_end: "17:00:00"
+  break_start: "12:00:00"
+  break_end: "12:30:00"
+  slot_minutes: 15
+  minimum_observations: 1
+  probability_threshold: 0.1
+
+evaluation:
+  duration_tolerance_seconds: 1.0
+
+output:
+  write_instance_report: true
+
+cause_order:
+  - "batching"
+  - "contention"
+  - "prioritization"
+  - "unavailability"
+  - "extraneous"
