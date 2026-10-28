@@ -1,0 +1,7 @@
+{
+  "expected_comparison": null,
+  "batch_ground_truth": {
+    "available": false,
+    "reason": "No batch_instance_id column"
+  }
+}
