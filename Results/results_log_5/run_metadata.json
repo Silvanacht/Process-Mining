@@ -1,0 +1,91 @@
+{
+  "program_version": "1.0.0",
+  "executed_at_utc": "2026-10-27T20:45:15.330336+00:00",
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "pandas": "2.3.3",
+  "numpy": "2.3.4",
+  "input": "manual_log_5.csv",
+  "input_sha256": "d1fdc37b2d8fb2043ba6272de9d7c6d076c97c4c392a6791c7438b01adbbb627",
+  "expected": "manual_log_5_expected.csv",
+  "config": {
+    "case_col": "case_id",
+    "activity_col": "Activity",
+    "start_col": "start_time",
+    "end_col": "end_time",
+    "resource_col": "Resource",
+    "timezone": "UTC",
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "transition_method": "closest_non_concurrent",
+    "concurrency_threshold": 0.1,
+    "max_predecessors": 1,
+    "include_zero_wait": true,
+    "batch_min_size": 2,
+    "batch_start_gap_seconds": 60.0,
+    "batch_same_day": true,
+    "calendar_method": "schedule",
+    "working_weekdays": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "work_start": "09:00:00",
+    "work_end": "17:00:00",
+    "break_start": "12:00:00",
+    "break_end": "12:30:00",
+    "calendar_slot_minutes": 15,
+    "calendar_min_events": 1,
+    "calendar_probability_threshold": 0.1,
+    "duration_tolerance_seconds": 1.0,
+    "write_instances": true,
+    "cause_order": [
+      "batching",
+      "contention",
+      "prioritization",
+      "unavailability",
+      "extraneous"
+    ]
+  },
+  "quality": {
+    "rows": 57,
+    "cases": 15,
+    "activities": 7,
+    "resources": 4,
+    "null_counts": {
+      "case_id": 0,
+      "activity": 0,
+      "start_time": 0,
+      "end_time": 0,
+      "resource": 0
+    },
+    "zero_duration_events": 0,
+    "exact_duplicate_rows": 0,
+    "logical_duplicate_rows": 0,
+    "same_resource_overlap_observations": 0,
+    "single_event_cases": 0,
+    "original_columns": [
+      "case_id",
+      "Activity",
+      "start_time",
+      "end_time",
+      "Resource"
+    ],
+    "normalized_columns": [
+      "case_id",
+      "activity",
+      "start_time",
+      "end_time",
+      "resource",
+      "source_row",
+      "event_id",
+      "processing_seconds"
+    ]
+  },
+  "transitions": 42,
+  "transition_groups": 7,
+  "predicted_batch_groups": 3,
+  "runtime_seconds": 0.17564889998175204
+}

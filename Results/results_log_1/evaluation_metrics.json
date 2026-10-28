@@ -1,0 +1,24 @@
+{
+  "expected_comparison": {
+    "expected_rows": 8,
+    "predicted_rows": 8,
+    "matched_key_rows": 8,
+    "missing_rows": 0,
+    "unexpected_rows": 0,
+    "full_row_matches": 8,
+    "full_row_match_rate": 1.0,
+    "mean_max_duration_error_seconds": 0.0,
+    "cause_presence": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "batch_ground_truth": {
+    "available": false,
+    "reason": "No batch_instance_id column"
+  }
+}

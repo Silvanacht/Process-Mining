@@ -1,0 +1,43 @@
+{
+  "processing_seconds": 51300.0,
+  "waiting_seconds": 21600.0,
+  "cte": 0.7037037037037037,
+  "cte_percent": 70.37037037037037,
+  "by_cause": {
+    "batching": {
+      "waiting_seconds": 0.0,
+      "cte_without_cause": 0.7037037037037037,
+      "cte_without_cause_percent": 70.37037037037037,
+      "cte_impact": 0.0,
+      "cte_impact_percentage_points": 0.0
+    },
+    "contention": {
+      "waiting_seconds": 4500.0,
+      "cte_without_cause": 0.75,
+      "cte_without_cause_percent": 75.0,
+      "cte_impact": 0.04629629629629628,
+      "cte_impact_percentage_points": 4.629629629629628
+    },
+    "prioritization": {
+      "waiting_seconds": 6300.0,
+      "cte_without_cause": 0.7702702702702703,
+      "cte_without_cause_percent": 77.02702702702703,
+      "cte_impact": 0.06656656656656657,
+      "cte_impact_percentage_points": 6.656656656656656
+    },
+    "unavailability": {
+      "waiting_seconds": 3600.0,
+      "cte_without_cause": 0.7402597402597403,
+      "cte_without_cause_percent": 74.02597402597402,
+      "cte_impact": 0.036556036556036564,
+      "cte_impact_percentage_points": 3.6556036556036564
+    },
+    "extraneous": {
+      "waiting_seconds": 7200.0,
+      "cte_without_cause": 0.7808219178082192,
+      "cte_without_cause_percent": 78.08219178082192,
+      "cte_impact": 0.07711821410451547,
+      "cte_impact_percentage_points": 7.711821410451547
+    }
+  }
+}

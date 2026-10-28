@@ -1,0 +1,8 @@
+source_activity,source_resource,target_activity,target_resource,row_status,wt_total_absolute_error_seconds,wt_batching_absolute_error_seconds,wt_prioritization_absolute_error_seconds,wt_contention_absolute_error_seconds,wt_unavailability_absolute_error_seconds,wt_extraneous_absolute_error_seconds,frequency_match,case_set_match,duration_match,max_duration_error_seconds,full_row_match
+A,Marcus,B,Anya,both,0.0,0.0,0.0,0.0,0.0,0.0,True,True,True,0.0,True
+B,Anya,C,Carmine,both,0.0,0.0,0.0,0.0,0.0,0.0,True,True,True,0.0,True
+B,Anya,C,Dom,both,0.0,0.0,0.0,0.0,0.0,0.0,True,True,True,0.0,True
+C,Carmine,D,Carmine,both,0.0,0.0,0.0,0.0,0.0,0.0,True,True,True,0.0,True
+C,Dom,D,Dom,both,0.0,0.0,0.0,0.0,0.0,0.0,True,True,True,0.0,True
+E,Anya,F,Anya,both,0.0,0.0,0.0,0.0,0.0,0.0,True,True,True,0.0,True
+F,Anya,G,Marcus,both,0.0,0.0,0.0,0.0,0.0,0.0,True,True,True,0.0,True
